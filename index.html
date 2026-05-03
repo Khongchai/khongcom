@@ -35,14 +35,6 @@
 
     <h2>Software</h2>
 
-    <p>
-      You'll see "from scratch" a lot below. That's deliberate &mdash; I build
-      robust systems from scratch to optimize for cost, performance, and
-      flexibility, and I minimize library dependencies so iteration stays rapid
-      and stable. Libraries are used only when the need for development speed
-      outweighs the customization.
-    </p>
-
     <ul>
       <li>
         <details>
@@ -50,7 +42,7 @@
           <p>
             A cross-platform music app for Windows and iOS, built with .NET MAUI
             plus a mix of C#, Rust, and TypeScript. The audio engine includes a
-            full vocoder I wrote from scratch &mdash; running inside a WebView,
+            full vocoder I wrote myself &mdash; running inside a WebView,
             of all places, and performing well there. Four-part devlog covers
             cross-platform graphics and audio in .NET MAUI, audio streaming
             through the WebView, multi-threaded JavaScript synchronization, and
@@ -96,7 +88,7 @@
           <p>
             A small 2D engine in pure TypeScript on HTML5 canvas, powering the
             game navigation interface on radiant.gg. No engine library &mdash;
-            wrote the rendering and input loop from scratch.
+            the rendering and input loop are hand-rolled.
             <a href="https://radiant.gg">radiant.gg</a>
           </p>
         </details>
@@ -106,9 +98,9 @@
         <details>
           <summary>Catnap House finance ledger</summary>
           <p>
-            The core finance module at Catnap House Co.Ltd. An event-sourced
-            custom ledger built from scratch, handling multi-currency (USD /
-            THB) conversions and a coupon system.
+            The core finance module at Catnap House Co.Ltd. A custom
+            event-sourced ledger handling multi-currency (USD / THB)
+            conversions and a coupon system.
           </p>
         </details>
       </li>
@@ -117,7 +109,7 @@
         <details>
           <summary>Catnap House chat system</summary>
           <p>
-            A real-time chat system at Catnap House, built from scratch on
+            A real-time chat system at Catnap House, built directly on
             RabbitMQ and Postgres. Skipped the usual SaaS chat services to keep
             things stable, cost-efficient, and fully under our control.
           </p>
