@@ -35,15 +35,25 @@
 
     <h2>Software</h2>
 
+    <p>
+      You'll see "from scratch" a lot below. That's deliberate &mdash; I build
+      robust systems from scratch to optimize for cost, performance, and
+      flexibility, and I minimize library dependencies so iteration stays rapid
+      and stable. Libraries are used only when the need for development speed
+      outweighs the customization.
+    </p>
+
     <ul>
       <li>
         <details>
           <summary>Smart Soloist</summary>
           <p>
-            A cross-platform audio app for Windows and iOS, built with .NET
-            MAUI. I wrote a four-part devlog covering the build &mdash;
-            cross-platform graphics and audio with .NET MAUI, audio streaming
-            through a WebView, multi-threaded JavaScript synchronization, and
+            A cross-platform music app for Windows and iOS, built with .NET MAUI
+            plus a mix of C#, Rust, and TypeScript. The audio engine includes a
+            full vocoder I wrote from scratch &mdash; running inside a WebView,
+            of all places, and performing well there. Four-part devlog covers
+            cross-platform graphics and audio in .NET MAUI, audio streaming
+            through the WebView, multi-threaded JavaScript synchronization, and
             audio thread optimization.
             <a href="https://medium.com/@khongchai"
               >Read the devlogs on Medium.</a
@@ -61,6 +71,68 @@
             Soloist work.
             <a href="https://github.com/khongchai/native-to-webview-audio"
               >Source on GitHub.</a
+            >
+          </p>
+        </details>
+      </li>
+
+      <li>
+        <details>
+          <summary>terminal.zentry.com</summary>
+          <p>
+            The flagship product at Zentry. A 3D site(the old version) rendered
+            with Three.js and hand-written shaders, backed by a Temporal +
+            MongoDB pipeline that processes crypto insights using algorithms
+            like a sliding window for normalized scoring and token buckets for
+            stamina tracking.
+            <a href="https://terminal.zentry.com">terminal.zentry.com</a>
+          </p>
+        </details>
+      </li>
+
+      <li>
+        <details>
+          <summary>radiant.gg game navigation engine</summary>
+          <p>
+            A small 2D engine in pure TypeScript on HTML5 canvas, powering the
+            game navigation interface on radiant.gg. No engine library &mdash;
+            wrote the rendering and input loop from scratch.
+            <a href="https://radiant.gg">radiant.gg</a>
+          </p>
+        </details>
+      </li>
+
+      <li>
+        <details>
+          <summary>Catnap House finance ledger</summary>
+          <p>
+            The core finance module at Catnap House Co.Ltd. An event-sourced
+            custom ledger built from scratch, handling multi-currency (USD /
+            THB) conversions and a coupon system.
+          </p>
+        </details>
+      </li>
+
+      <li>
+        <details>
+          <summary>Catnap House chat system</summary>
+          <p>
+            A real-time chat system at Catnap House, built from scratch on
+            RabbitMQ and Postgres. Skipped the usual SaaS chat services to keep
+            things stable, cost-efficient, and fully under our control.
+          </p>
+        </details>
+      </li>
+
+      <li>
+        <details>
+          <summary>khong.xyz Flutter packages</summary>
+          <p>
+            A handful of Flutter packages I published on pub.dev during the
+            early-Flutter days, back when the ecosystem didn't yet have what we
+            needed.
+            <a href="https://pub.dev/publishers/khong.xyz/packages"
+              >pub.dev/publishers/khong.xyz</a
             >
           </p>
         </details>
